@@ -1,0 +1,28 @@
+/* src/components/TopNav.css */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00695c;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-size: 0.9rem;
+}
+  
+.topnav-left,
+.topnav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.topnav a {
+    color: white;
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    color: #ffd700;
+}
+  
