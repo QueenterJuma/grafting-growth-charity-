@@ -1,0 +1,21 @@
+.gallery {
+    padding: 3rem;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.gallery-grid img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    animation: zoomIn 1.5s;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+  
