@@ -5,7 +5,7 @@ import "../styles/TopNav.css";
 const TopNav = () => (
   <div className="topnav">
     <div className="contact-info">
-      <FaEnvelope /> graftinggrowth@gmail.com | <FaPhoneAlt /> +254 700 000 000
+      <FaEnvelope /> graftinggrowth@gmail.com | <FaPhoneAlt /> +254 759 411 484
     </div>
     <div className="social-icons">
       <FaFacebookF /> <FaTwitter /> <FaInstagram />

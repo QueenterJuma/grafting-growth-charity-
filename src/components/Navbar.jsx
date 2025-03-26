@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import TopNav from "./TopNav";
 import "../styles/Navbar.css";
+import Logo from '../assets/logo.jpg'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,9 +12,7 @@ const Navbar = () => {
     <>
       <TopNav />
       <nav className="navbar">
-        <div className="logo">
-          <a href="/"><img src="/logo.png" alt="Logo" /></a>
-        </div>
+        <div className="logo"><img src={Logo} alt="Grafting logo" /></div>
         <button className="menu-toggle" onClick={toggleMenu}>☰</button>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <Link to="/">Home</Link>
@@ -22,7 +21,7 @@ const Navbar = () => {
           <Link to="/gallery">Gallery</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/donate">Donate</Link>
-          <Link to="/payment-methods">Payment Methods</Link>
+          {/* <Link to="/payment-methods">Payment Methods</Link> */}
         </div>
       </nav>
     </>
